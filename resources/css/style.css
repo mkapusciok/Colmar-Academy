@@ -1,0 +1,65 @@
+/* Universal Styles */
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+/* Header */
+header {
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 4rem;
+    align-items: center;
+}
+
+#logo {
+    display: flex;
+    position: relative;
+    left: 1.5rem;
+    height: 2rem;
+    align-items: center;
+}
+
+#school-name {
+    display: flex;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+#colmar {
+    color: #4a4a4a;
+    font-weight: bold;
+}
+
+#academy {
+    color: gray;
+}
+
+nav {
+    position: relative;
+    right: 0.5rem;
+    
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1rem;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: 500;
+}
