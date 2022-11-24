@@ -318,3 +318,168 @@ header .mobile {
         font-size: 1.5rem;
     }
 }
+
+/* Courses section */
+
+#course-info {
+    background-color: whitesmoke;
+    padding: 2rem 0;
+}
+
+#course-info h2 {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#course-info .course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#course-info .course {
+    max-width: 24%;
+    margin: 1rem;
+    background-color: white;
+}
+
+#course-info .course:hover {
+    background-color: lightgray;
+    max-width: 28%;
+}
+
+#course-info .content {
+    padding: 2rem 2rem 1.5rem;
+}
+
+#course-info .content h3 {
+    margin-bottom: 1rem;
+}
+
+#course-info .content p {
+    line-height: 1.5;
+    color: gray;
+    font-size: 1.125rem;
+}
+
+#course-info .courses-label {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 900px) {
+    #course-info .course {
+        min-width: 36%;
+    }
+
+    #course-info .course:hover {
+        min-width: 40%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    #course-info p {
+        display: none;
+    }
+
+    #course-info .image-container {
+        display: none;
+    }
+
+    #course-info .course-container {
+        flex-flow: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    #course-info .course {
+        background-color: lightgray;
+        opacity: 0.9;
+        margin: 0.5rem 1.5rem;
+        max-width: 100%;
+    }
+
+    #course-info .course:hover {
+        max-width: 100%;
+    }
+
+    #course-info h3 {
+        font-size: 2rem;
+    }
+}
+
+/* Thesis Exhibit */
+
+#thesis-exhibit {
+    background-color: ghostwhite;
+    padding: 2rem 0 2rem 1.5rem;
+}
+
+#thesis-exhibit h2 {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+#thesis-container {
+    display: flex;
+    padding-top: 2rem;
+}
+
+#thesis-video {
+    width: 55%;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#thesis-exhibit .image-container {
+    max-width: 32%;
+    margin: 1rem
+}
+
+#thesis-exhibit .content h3 {
+    margin: 1rem 0;
+}
+
+.exhibit-container {
+    width: 45%;
+    margin-right: 2rem;
+}
+
+.exhibit-container .content {
+    margin-left: 0.5rem;
+}
+
+#thesis-exhibit .mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 650px) {
+
+    #thesis-exhibit .desktop, .exhibit-container, #thesis-container .content {
+        display: none;
+    }
+
+    #thesis-exhibit .mobile {
+        display: block;
+    }
+
+    #thesis-container, #thesis-video {
+        width: 100%;
+        padding-bottom: 3rem;
+    }
+
+    #thesis-exhibit {
+        padding: 0;
+    }
+
+    #thesis-exhibit h2 {
+        margin: 0;
+        padding: 1.5rem;
+    }
+}
