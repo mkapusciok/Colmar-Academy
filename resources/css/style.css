@@ -15,12 +15,46 @@ body {
     color: #505050;
 }
 
+main, footer {
+    position: relative;
+    top: 4rem;
+}
+
 .left {
     float: left;
 }
 
 .right {
     float: right;
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.button {
+    padding: 1rem 0;
+    background-color: #505050;
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+    width: 80%;
+}
+
+h1 {
+    font-size: 3.125rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
 }
 
 a {
@@ -101,5 +135,71 @@ header .mobile {
         height: 3.5rem;
         width: auto;
         vertical-align: middle;
+    }
+}
+
+/* Banner */
+
+#banner {
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+}
+
+#banner-image {
+    width: 50%;
+    margin: 2rem 0 2rem 1.5rem;
+}
+
+#banner .content {
+    width: 30%;
+    padding: 4rem 1.5rem;
+}
+
+#banner h3 {
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+}
+
+#banner a {
+    color: white;
+}
+
+@media only screen and (max-width: 1125px) {
+
+    #banner-image {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #banner-image {
+        min-width: 90%;
+    }
+
+    #banner {
+        flex-flow: column;
+    }
+
+    #banner .content {
+        width: 70%;
+        padding: 0 1rem 2rem;
+    }
+
+    .button {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    #banner-image {
+        width: 100%;
+        margin: auto;
+    }
+
+    #banner .content {
+        padding: 2rem 0;
     }
 }
